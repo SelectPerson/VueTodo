@@ -14,11 +14,11 @@
         },
         methods: {
             onSubmit() {
-                console.log('Test:', this.title);
+                console.log('Test:', this.task);
                 if(this.title.trim()) {
                     const newTodo = {
                         id: Date.now(),
-                        title: this.title,
+                        task: this.title,
                         completed: false
                     };
                     this.$emit('add-todo', newTodo);

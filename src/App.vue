@@ -30,7 +30,7 @@
       },
       addTodo(todo) {
         this.TodoListArr.push(todo);
-        console.log('Vova: ', todo);
+        console.log('Vova: ', todo.task);
       }
     },
     data() {
